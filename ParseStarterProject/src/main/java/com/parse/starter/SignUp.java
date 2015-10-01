@@ -3,26 +3,25 @@ package com.parse.starter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
 public class SignUp extends AppCompatActivity {
 
     EditText userN, pass;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        userN = (EditText) findViewById(R.id.signEditUser);
-        pass = (EditText) findViewById(R.id.signEditPass);
-
+        initViews();
 
         findViewById(R.id.signBtnDone).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,14 +31,19 @@ public class SignUp extends AppCompatActivity {
         });
     }
 
-    public MyParseUser addUser(){
-        MyParseUser user = new MyParseUser();
+    private void initViews(){
+        userN = (EditText) findViewById(R.id.signEditUser);
+        pass = (EditText) findViewById(R.id.signEditPass);
+    }
+
+    public User addUser(){
+        User user = new User();
         user.setUsername(userN.getText().toString());
         user.setPassword(pass.getText().toString());
-        user.setEmail("email@example.com");
+        //user.setEmail("email@example.com");
 
-// other fields can be set just like with ParseObject
-        user.put("phone", "650-555-0000");
+    // other fields can be set just like with ParseObject
+        //user.put("phone", "650-555-0000");
 
         user.signUpInBackground(new SignUpCallback() {
             @Override
@@ -49,6 +53,7 @@ public class SignUp extends AppCompatActivity {
                     Intent intent = new Intent(SignUp.this, MainActivity.class);
                     startActivity(intent);
                 } else {
+                    Log.d("error", e.toString());
                     // Sign up didn't succeed. Look at the ParseException
                     // to figure out what went wrong
                 }

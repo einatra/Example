@@ -33,13 +33,22 @@
         android:id="@+id/mainPassEdit"
         android:layout_below="@+id/mainUserNEdit"
         android:layout_centerHorizontal="true"
-        android:hint="Password" />
+        android:hint="Password"
+        android:gravity="center" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign Up"
         android:id="@+id/mainSignText"
+        android:layout_below="@+id/mainInBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:id="@+id/mainInBtn"
         android:layout_below="@+id/mainPassEdit"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
