@@ -49,7 +49,7 @@ public class SignUp extends AppCompatActivity {
             @Override
             public void done(com.parse.ParseException e) {
                 if (e == null) {
-                    Toast.makeText(SignUp.this, "user created", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignUp.this, "User created", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(SignUp.this, MainActivity.class);
                     startActivity(intent);
                 } else {

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\src\main\AndroidManifest.xml:10:1-44:12
+ADDED from E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\src\main\AndroidManifest.xml:10:1-48:12
 	package
 		ADDED from E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\src\main\AndroidManifest.xml:11:5-32
 		INJECTED from E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\src\main\AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\src\main\A
 	android:name
 		ADDED from E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\src\main\AndroidManifest.xml:14:22-76
 application
-ADDED from E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\src\main\AndroidManifest.xml:16:5-42:19
+ADDED from E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\src\main\AndroidManifest.xml:16:5-46:19
 MERGED from [com.android.support:appcompat-v7:22.2.0] E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 	android:label
@@ -69,6 +69,12 @@ ADDED from E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\src\main\A
 		ADDED from E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\src\main\AndroidManifest.xml:40:13-59
 	android:name
 		ADDED from E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\src\main\AndroidManifest.xml:39:13-35
+activity#com.parse.starter.Welcome
+ADDED from E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\src\main\AndroidManifest.xml:42:9-45:20
+	android:label
+		ADDED from E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\src\main\AndroidManifest.xml:44:13-59
+	android:name
+		ADDED from E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\src\main\AndroidManifest.xml:43:13-36
 uses-sdk
 INJECTED from E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:22.2.0] E:\Einat\AndroidStudioProjects\Example\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:20:5-43

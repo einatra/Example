@@ -45,6 +45,10 @@
             android:name="com.parse.starter.SignUp"
             android:label="@string/title_activity_sign_up" >
         </activity>
+        <activity
+            android:name="com.parse.starter.Welcome"
+            android:label="@string/title_activity_welcome" >
+        </activity>
     </application>
 
 </manifest>
