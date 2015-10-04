@@ -27,7 +27,7 @@ public class StarterApplication extends Application {
 
     ParseObject.registerSubclass(User.class);
     // Add your initialization code here
-    Parse.initialize(this, Finals.APPLICATION_ID, Finals.CLIENT_KEY);
+    Parse.initialize(this, Constants.APPLICATION_ID, Constants.CLIENT_KEY);
 
     ParseUser.enableAutomaticUser();
     ParseACL defaultACL = new ParseACL();

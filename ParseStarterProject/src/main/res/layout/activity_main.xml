@@ -39,10 +39,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
+        android:text="Don&apos;t have a user yet? SignUp!"
         android:id="@+id/mainSignText"
-        android:layout_below="@+id/mainInBtn"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2699ff" />
 
     <Button
         android:layout_width="wrap_content"

@@ -42,7 +42,7 @@ public class SignUp extends AppCompatActivity {
         user.setPassword(pass.getText().toString());
         //user.setEmail("email@example.com");
 
-    // other fields can be set just like with ParseObject
+        // other fields can be set just like with ParseObject
         //user.put("phone", "650-555-0000");
 
         user.signUpInBackground(new SignUpCallback() {
@@ -50,8 +50,9 @@ public class SignUp extends AppCompatActivity {
             public void done(com.parse.ParseException e) {
                 if (e == null) {
                     Toast.makeText(SignUp.this, "User created", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(SignUp.this, MainActivity.class);
+                    Intent intent = new Intent(SignUp.this, Welcome.class);
                     startActivity(intent);
+                    finish();
                 } else {
                     Log.d("error", e.toString());
                     // Sign up didn't succeed. Look at the ParseException

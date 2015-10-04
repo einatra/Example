@@ -12,5 +12,4 @@ public class User extends ParseUser {
     public User() {
     }
 
-
 }
